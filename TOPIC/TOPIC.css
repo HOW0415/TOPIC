@@ -1,0 +1,155 @@
+/*color*/
+.yellow{
+    color:#EB9900 ;
+}
+.green{
+    color: #00DB00;
+}
+.white{
+    color: #ffffff;
+}
+.black{
+    color: #000000;
+}
+.grey{
+    color: #979797;
+}
+.underLineStyle {/*輸入框*/
+    outline: none;/*外框隱藏*/
+    border: none;/*外框個邊造型隱藏*/
+    border-bottom: 3px solid #EB9900;
+    padding-top: 0px;/*與上邊框距離*/
+    padding-bottom: 5px;/*底線與字的距離*/
+    font-size: 40px;/*字體大小*/
+}
+/*整體定義開始*/
+/*下拉選單開始*/
+select:required:invalid {
+    color: gray;
+  }
+option[value=""][disabled] {
+    display: none;
+  }
+option {
+    font-size: 30px;
+    color: black;
+    font-size: 20px;
+  }
+/*下拉選單結束*/
+p {
+    line-height: 1.5;
+    padding: 1em;
+  }
+/*整體定義結束*/
+
+#first{
+    height: 1860px;
+    width: 1890px;
+    background-color: green;
+}
+#title1{
+    height: 50%;
+    width: 45%;
+    background-color: #ffffff;
+    float:left;
+}
+#logo{
+    width: 700px;
+    height: 300px;
+    border-radius: 50px;/*圓角*/
+    font-size: 200px;/*文字大小*/
+    line-height:  300px;/*文字置中*/
+    max-width:  100%;
+    text-align:  center;
+    border:  10px solid hsl(108, 100%, 47%);/*外框*/
+    position: relative;/*div置中*/
+    top: 40%;  
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+#button{
+    position: relative;
+    width: 200px;
+    height: 80px;
+    top: 250px;
+    left: 628px;
+    font-size: 50px;/*文字大小*/
+    line-height:  80px;/*文字置中*/
+    max-width:  100%;
+    text-align:  center;
+    border:  5px solid hsl(39, 100%, 47%);/*外框*/
+    border-radius: 50px;/*圓角*/
+}
+#three_D1{
+    height: 50%;
+    width: 55%;
+    background-color: #ffffff;
+    float:left;
+}
+#title2{
+    height: 50%;
+    width: 30%;
+    background-color: #ffffff;
+    float:left;
+}
+#need{
+    position: relative;
+    height: 100px;
+    width: 600px;
+    top: 150px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/*use 開始*/
+#use{
+    position: relative;
+    top: 150px;
+    left: 50px;
+    width:490px
+}
+select {
+    font-size: 40px;/*字體大小*/
+    outline: none;/*外框隱藏*/
+    border: none;/*外框個邊造型隱藏*/
+    border-bottom: 3px solid #EB9900;/*底線粗度和顏色*/
+    appearance:none;
+    padding-bottom: 5px;/*底線與字的距離*/
+  
+}
+/*use 結束*/
+#choose_PC{
+    position: relative;
+    top: 280px;
+    left: 50px;
+    width:490px
+  }
+#Budget{
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+#three_D2{
+    height: 50%;
+    width: 70%;
+    background-color: #ffffff;
+    float:left;
+}
+/*可用素材開始*/
+#vertical{
+    position: relative;
+    height: 920px;
+    width: 680px;
+    left: 20px;
+    background-color: #11fc11;
+}
+#vertica2{
+    position: relative;
+    height: 920px;
+    width: 102px;
+    left: 64px;
+    background-color: #ffffff;
+}
+/*可用素材結束*/
+#canvas {
+    display: block;
+  }

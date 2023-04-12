@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./TOPIC.css">
+    <script src="main.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div id="first">
+      <div id="title1">
+        <!--logo顯示區-->
+        <div id="logo">
+          <font face="fantasy" class="yellow">PC</font>
+          <font face="fantasy" class="green">way</font>
+        </div>
+        <div id="button" onclick="onTopClick();menuout()">
+          <font face="fantasy" class="yellow">開始</font>
+        </div>
+      </div>
+
+      <div id="three_D1">
+        <!--3D網頁顯示區-->
+        <canvas id="canvas3d"></canvas>
+        <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+        <script type="importmap">
+          {
+            "imports": {
+              "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.287/build/runtime.js"
+            }
+          }
+        </script>
+        <script type="module" src="./src/main.js"></script>
+      </div>
+
+      <div id="title2" >
+        <div id="need" >
+            <input id="Budget" type="text" class="underLineStyle" placeholder="預算金額...">
+
+            <select name="pets" id="use" required>
+              <option value="" disabled selected>選擇使用需求...</option>
+              <option  value="1" >文書</option>
+              <option  value="2" >遊戲</option>
+              <option  value="3" >剪輯</option>
+            </select>
+            
+              <select name="pets" id="choose_PC" required>
+                <option value="" disabled selected>選擇主機樣式...</option>
+                <option  value="1" >AAA</option>
+                <option  value="2" >BBB</option>
+                <option  value="3" >CCC</option>
+              </select>
+        </div>
+      </div>
+      <div id="three_D2">
+        <img src="loading.gif" width="100%" height="100%"/>
+        
+      </div>
+    </div>
+    <script>/*JS位置*/
+      function onTopClick(){
+        document.getElementById('title2').scrollIntoView({
+          block:'start',
+          inline: 'nearest',
+          behavior: 'smooth'
+        })
+      }
+    </script>
+  </body>
+</html>
